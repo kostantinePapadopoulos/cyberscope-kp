@@ -53,7 +53,6 @@ const DataTable = ({ url, columns, onRowClick }) => {
 
       const result = await response.json();
       setData(result.data || []);
-      console.log("data", result);
     } catch (error) {
       console.error("API error:", error);
       setData([]);
